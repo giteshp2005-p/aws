@@ -1,0 +1,279 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crime Branch | Hemesh Patil</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f1f4f8;
+            color: #222;
+        }
+
+        header {
+            background: #102542;
+            color: white;
+            padding: 25px 15px;
+            text-align: center;
+            border-bottom: 5px solid #c99a35;
+        }
+
+        header h1 {
+            font-size: 30px;
+            margin-bottom: 8px;
+        }
+
+        nav {
+            background: #183b61;
+            padding: 15px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        .hero {
+            background: linear-gradient(135deg, #102542, #28527a);
+            color: white;
+            text-align: center;
+            padding: 60px 20px;
+        }
+
+        .hero h2 {
+            font-size: 34px;
+            margin-bottom: 15px;
+        }
+
+        .hero p {
+            font-size: 17px;
+            line-height: 1.7;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 30px auto;
+            padding: 20px;
+        }
+
+        .card {
+            background: white;
+            padding: 25px;
+            margin-bottom: 25px;
+            border-radius: 10px;
+            box-shadow: 0 3px 12px #00000012;
+        }
+
+        .card h2 {
+            color: #102542;
+            margin-bottom: 15px;
+        }
+
+        .officer {
+            text-align: center;
+            border-top: 4px solid #c99a35;
+        }
+
+        .badge {
+            width: 100px;
+            height: 100px;
+            background: #102542;
+            color: #f4cf70;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 38px;
+            margin: 0 auto 15px;
+        }
+
+        label {
+            display: block;
+            margin-top: 15px;
+            font-weight: bold;
+        }
+
+        input, select, textarea {
+            width: 100%;
+            padding: 12px;
+            margin-top: 7px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 15px;
+        }
+
+        button {
+            margin-top: 18px;
+            padding: 12px 22px;
+            background: #102542;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background: #28527a;
+        }
+
+        footer {
+            background: #102542;
+            color: white;
+            text-align: center;
+            padding: 22px;
+            line-height: 1.8;
+        }
+
+        .notice {
+            color: #8b2525;
+            font-size: 13px;
+            margin-top: 12px;
+        }
+
+        @media (max-width: 600px) {
+            nav a {
+                display: inline-block;
+                margin: 8px;
+            }
+
+            .hero h2 {
+                font-size: 26px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>CRIME BRANCH</h1>
+    <p>Public Safety | Justice | Service</p>
+    <p>Sample Website Design</p>
+</header>
+
+<nav>
+    <a href="#home">Home</a>
+    <a href="#officer">Officer</a>
+    <a href="#complaint">Complaint</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<section class="hero" id="home">
+    <h2>Crime Branch – Public Information</h2>
+    <p>Working towards a safer community through awareness,
+       cooperation and responsible reporting.</p>
+</section>
+
+<div class="container">
+
+    <section class="card officer" id="officer">
+        <div class="badge">CP</div>
+        <h2>Hemesh Patil</h2>
+        <p><strong>Officer Name:</strong> Hemesh Patil</p>
+        <p><strong>Department:</strong> Crime Branch</p>
+        <p><strong>Role:</strong> Officer profile (sample)</p>
+        <p class="notice">
+            This is a demonstration profile. Official designation
+            and posting have not been verified.
+        </p>
+    </section>
+
+    <section class="card">
+        <h2>Public Safety Information</h2>
+        <p>Help prevent crime by staying alert, protecting personal
+           information and reporting suspicious activity to the
+           appropriate authorities.</p>
+        <p style="margin-top: 12px;">
+            For emergencies in India, call <strong>112</strong>.
+        </p>
+    </section>
+
+    <section class="card" id="complaint">
+        <h2>Complaint / Information Form</h2>
+
+        <form id="complaintForm">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" required
+                   placeholder="Enter your name">
+
+            <label for="phone">Contact Number</label>
+            <input type="tel" id="phone" required
+                   placeholder="Enter your contact number">
+
+            <label for="type">Complaint Type</label>
+            <select id="type" required>
+                <option value="">Select complaint type</option>
+                <option>Theft</option>
+                <option>Cyber Crime</option>
+                <option>Fraud</option>
+                <option>Missing Person</option>
+                <option>Other</option>
+            </select>
+
+            <label for="details">Complaint Details</label>
+            <textarea id="details" rows="5" required
+                      placeholder="Describe the incident"></textarea>
+
+            <button type="submit">Submit Demo Form</button>
+
+            <p class="notice">
+                Demo only: this form does not send or register a
+                complaint with the police. Do not enter real
+                personal or sensitive information.
+            </p>
+        </form>
+    </section>
+
+    <section class="card" id="contact">
+        <h2>Official Resources</h2>
+        <p>For genuine complaints, contact your local police station
+           or use the official Maharashtra Police citizen portal.</p>
+        <p style="margin-top: 12px;">
+            <a href="https://citizen.mahapolice.gov.in/"
+               target="_blank" rel="noopener noreferrer">
+                Maharashtra Police Citizen Portal
+            </a>
+        </p>
+        <p style="margin-top: 10px;">
+            <a href="https://112.gov.in/"
+               target="_blank" rel="noopener noreferrer">
+                Emergency Helpline Information
+            </a>
+        </p>
+    </section>
+
+</div>
+
+<footer>
+    <p>Crime Branch – Sample Web Project</p>
+    <p>For demonstration and educational purposes only.</p>
+    <p>&copy; 2026</p>
+</footer>
+
+<script>
+    document.getElementById("complaintForm")
+        .addEventListener("submit", function(event) {
+            event.preventDefault();
+
+            alert("Demo form submitted successfully. " +
+                  "No complaint was sent to the police.");
+
+            this.reset();
+        });
+</script>
+
+</body>
+</html>
